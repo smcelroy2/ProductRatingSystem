@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProductRatingSystem
 {
-    public partial class Form1 : Form
+    public partial class Post_Product_Page : Form
     {
-        public Form1()
+        public Post_Product_Page()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            HelloLabel.Text = "Hello Label.";
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace ProductRatingSystem
 {
-    partial class Form1
+    partial class Post_Product_Page
     {
         /// <summary>
         /// Required designer variable.
@@ -29,36 +29,12 @@ namespace ProductRatingSystem
         /// </summary>
         private void InitializeComponent()
         {
-            this.HelloLabel = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            // 
-            // HelloLabel
-            // 
-            this.HelloLabel.AutoSize = true;
-            this.HelloLabel.Location = new System.Drawing.Point(335, 191);
-            this.HelloLabel.Name = "HelloLabel";
-            this.HelloLabel.Size = new System.Drawing.Size(95, 17);
-            this.HelloLabel.TabIndex = 0;
-            this.HelloLabel.Text = "This is a label";
-            this.HelloLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.HelloLabel.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.HelloLabel);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            this.Text = "Post_Product_Page";
         }
 
         #endregion
-
-        private System.Windows.Forms.Label HelloLabel;
     }
 }
-
