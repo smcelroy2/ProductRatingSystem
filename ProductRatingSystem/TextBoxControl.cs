@@ -26,7 +26,7 @@ namespace ProductRatingSystem
         }
 
         private Color borderColor = Color.Black;
-        private Color borderFocusColor = Color.HotPink;
+        private Color borderFocusColor = Color.Black;
         private int borderSize = 2;
         private bool underlinedStyle = false;
         private bool isFocused = false;

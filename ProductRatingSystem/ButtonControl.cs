@@ -32,12 +32,11 @@ namespace ProductRatingSystem
 
 
         private Color borderColor = Color.Black;
-        private Color borderFocusColor = Color.HotPink;
+        private Color borderFocusColor = Color.Black;
         private int borderSize = 2;
         private bool underlinedStyle = false;
         private bool isFocused = false;
         private int borderRadius = 0;
-        private Color placeholderColor = Color.DarkGray;
         private bool isPlaceholder = false;
 
 
@@ -256,7 +255,7 @@ namespace ProductRatingSystem
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            this.OnClick(e);
         }
     }
 }

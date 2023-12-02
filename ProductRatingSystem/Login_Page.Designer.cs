@@ -30,9 +30,9 @@ namespace ProductRatingSystem
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxControl2 = new ProductRatingSystem.TextBoxControl();
-            this.textBoxControl1 = new ProductRatingSystem.TextBoxControl();
-            this.buttonControl1 = new ProductRatingSystem.ButtonControl();
+            this.pass = new ProductRatingSystem.TextBoxControl();
+            this.user = new ProductRatingSystem.TextBoxControl();
+            this.loginButton = new ProductRatingSystem.ButtonControl();
             this.SuspendLayout();
             // 
             // label1
@@ -46,72 +46,73 @@ namespace ProductRatingSystem
             this.label1.Text = "Login Now:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBoxControl2
+            // pass
             // 
-            this.textBoxControl2.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxControl2.BorderColor = System.Drawing.Color.Black;
-            this.textBoxControl2.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBoxControl2.BorderRadius = 15;
-            this.textBoxControl2.BorderSize = 2;
-            this.textBoxControl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBoxControl2.Location = new System.Drawing.Point(232, 186);
-            this.textBoxControl2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxControl2.Multiline = false;
-            this.textBoxControl2.Name = "textBoxControl2";
-            this.textBoxControl2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.textBoxControl2.PasswordChar = false;
-            this.textBoxControl2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textBoxControl2.PlaceholderText = "Password";
-            this.textBoxControl2.Size = new System.Drawing.Size(269, 32);
-            this.textBoxControl2.TabIndex = 5;
-            this.textBoxControl2.Texts = "";
-            this.textBoxControl2.UnderlinedStyle = false;
+            this.pass.BackColor = System.Drawing.SystemColors.Window;
+            this.pass.BorderColor = System.Drawing.Color.Black;
+            this.pass.BorderFocusColor = System.Drawing.Color.Black;
+            this.pass.BorderRadius = 15;
+            this.pass.BorderSize = 2;
+            this.pass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pass.Location = new System.Drawing.Point(233, 187);
+            this.pass.Margin = new System.Windows.Forms.Padding(4);
+            this.pass.Multiline = false;
+            this.pass.Name = "pass";
+            this.pass.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.pass.PasswordChar = false;
+            this.pass.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.pass.PlaceholderText = "Password";
+            this.pass.Size = new System.Drawing.Size(269, 32);
+            this.pass.TabIndex = 5;
+            this.pass.Texts = "";
+            this.pass.UnderlinedStyle = false;
+            this.pass.Load += new System.EventHandler(this.textBoxControl2_Load);
             // 
-            // textBoxControl1
+            // user
             // 
-            this.textBoxControl1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxControl1.BorderColor = System.Drawing.Color.Black;
-            this.textBoxControl1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textBoxControl1.BorderRadius = 15;
-            this.textBoxControl1.BorderSize = 2;
-            this.textBoxControl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBoxControl1.Location = new System.Drawing.Point(232, 122);
-            this.textBoxControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxControl1.Multiline = false;
-            this.textBoxControl1.Name = "textBoxControl1";
-            this.textBoxControl1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.textBoxControl1.PasswordChar = false;
-            this.textBoxControl1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textBoxControl1.PlaceholderText = "Email";
-            this.textBoxControl1.Size = new System.Drawing.Size(269, 32);
-            this.textBoxControl1.TabIndex = 4;
-            this.textBoxControl1.Texts = "";
-            this.textBoxControl1.UnderlinedStyle = false;
-            this.textBoxControl1.Load += new System.EventHandler(this.textBoxControl1_Load_1);
+            this.user.BackColor = System.Drawing.SystemColors.Window;
+            this.user.BorderColor = System.Drawing.Color.Black;
+            this.user.BorderFocusColor = System.Drawing.Color.Black;
+            this.user.BorderRadius = 15;
+            this.user.BorderSize = 2;
+            this.user.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.user.Location = new System.Drawing.Point(233, 123);
+            this.user.Margin = new System.Windows.Forms.Padding(4);
+            this.user.Multiline = false;
+            this.user.Name = "user";
+            this.user.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.user.PasswordChar = false;
+            this.user.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.user.PlaceholderText = "Email";
+            this.user.Size = new System.Drawing.Size(269, 32);
+            this.user.TabIndex = 4;
+            this.user.Texts = "";
+            this.user.UnderlinedStyle = false;
+            this.user.Load += new System.EventHandler(this.textBoxControl1_Load_1);
             // 
-            // buttonControl1
+            // loginButton
             // 
-            this.buttonControl1.BorderColor = System.Drawing.Color.Black;
-            this.buttonControl1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.buttonControl1.BorderRadius = 15;
-            this.buttonControl1.BorderSize = 2;
-            this.buttonControl1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonControl1.Location = new System.Drawing.Point(242, 244);
-            this.buttonControl1.Name = "buttonControl1";
-            this.buttonControl1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.buttonControl1.Size = new System.Drawing.Size(250, 44);
-            this.buttonControl1.TabIndex = 6;
-            this.buttonControl1.Texts = "Login";
-            this.buttonControl1.UnderlinedStyle = false;
-            this.buttonControl1.Load += new System.EventHandler(this.buttonControl1_Load);
+            this.loginButton.AllowDrop = true;
+            this.loginButton.BorderColor = System.Drawing.Color.Black;
+            this.loginButton.BorderFocusColor = System.Drawing.Color.Black;
+            this.loginButton.BorderRadius = 15;
+            this.loginButton.BorderSize = 2;
+            this.loginButton.Location = new System.Drawing.Point(243, 244);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.loginButton.Size = new System.Drawing.Size(250, 49);
+            this.loginButton.TabIndex = 6;
+            this.loginButton.Texts = "Login";
+            this.loginButton.UnderlinedStyle = false;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // Login_Page
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(775, 453);
-            this.Controls.Add(this.buttonControl1);
-            this.Controls.Add(this.textBoxControl2);
-            this.Controls.Add(this.textBoxControl1);
+            this.Controls.Add(this.loginButton);
+            this.Controls.Add(this.pass);
+            this.Controls.Add(this.user);
             this.Controls.Add(this.label1);
             this.Name = "Login_Page";
             this.Text = "Login Now:";
@@ -126,9 +127,9 @@ namespace ProductRatingSystem
         private System.Windows.Forms.Label HelloLabel;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private TextBoxControl textBoxControl1;
-        private TextBoxControl textBoxControl2;
-        private ButtonControl buttonControl1;
+        private TextBoxControl user;
+        private TextBoxControl pass;
+        private ButtonControl loginButton;
     }
 }
 
