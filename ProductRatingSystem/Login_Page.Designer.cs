@@ -97,6 +97,7 @@ namespace ProductRatingSystem
             this.loginButton.BorderFocusColor = System.Drawing.Color.Black;
             this.loginButton.BorderRadius = 15;
             this.loginButton.BorderSize = 2;
+            this.loginButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginButton.Location = new System.Drawing.Point(243, 244);
             this.loginButton.Name = "loginButton";
             this.loginButton.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
@@ -124,8 +125,7 @@ namespace ProductRatingSystem
 
         #endregion
 
-        private System.Windows.Forms.Label HelloLabel;
-        private System.Windows.Forms.Button button1;
+
         private System.Windows.Forms.Label label1;
         private TextBoxControl user;
         private TextBoxControl pass;
