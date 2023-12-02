@@ -112,6 +112,9 @@
     <EmbeddedResource Include="ButtonControl.resx">
       <DependentUpon>ButtonControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Page.resx">
+      <DependentUpon>Customer_Page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login_Page.resx">
       <DependentUpon>Login_Page.cs</DependentUpon>
     </EmbeddedResource>
