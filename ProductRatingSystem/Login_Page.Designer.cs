@@ -30,13 +30,14 @@ namespace ProductRatingSystem
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.loginButton = new ProductRatingSystem.ButtonControl();
             this.pass = new ProductRatingSystem.TextBoxControl();
             this.user = new ProductRatingSystem.TextBoxControl();
-            this.loginButton = new ProductRatingSystem.ButtonControl();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(306, 60);
@@ -46,8 +47,28 @@ namespace ProductRatingSystem
             this.label1.Text = "Login Now:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // loginButton
+            // 
+            this.loginButton.AllowDrop = true;
+            this.loginButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.loginButton.BorderColor = System.Drawing.Color.Black;
+            this.loginButton.BorderFocusColor = System.Drawing.Color.Black;
+            this.loginButton.BorderRadius = 15;
+            this.loginButton.BorderSize = 2;
+            this.loginButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginButton.Location = new System.Drawing.Point(243, 244);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.loginButton.Size = new System.Drawing.Size(250, 49);
+            this.loginButton.TabIndex = 6;
+            this.loginButton.Texts = "Login";
+            this.loginButton.UnderlinedStyle = false;
+            this.loginButton.Load += new System.EventHandler(this.loginButton_Load);
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
             // pass
             // 
+            this.pass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pass.BackColor = System.Drawing.SystemColors.Window;
             this.pass.BorderColor = System.Drawing.Color.Black;
             this.pass.BorderFocusColor = System.Drawing.Color.Black;
@@ -70,6 +91,7 @@ namespace ProductRatingSystem
             // 
             // user
             // 
+            this.user.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.user.BackColor = System.Drawing.SystemColors.Window;
             this.user.BorderColor = System.Drawing.Color.Black;
             this.user.BorderFocusColor = System.Drawing.Color.Black;
@@ -89,23 +111,6 @@ namespace ProductRatingSystem
             this.user.Texts = "";
             this.user.UnderlinedStyle = false;
             this.user.Load += new System.EventHandler(this.textBoxControl1_Load_1);
-            // 
-            // loginButton
-            // 
-            this.loginButton.AllowDrop = true;
-            this.loginButton.BorderColor = System.Drawing.Color.Black;
-            this.loginButton.BorderFocusColor = System.Drawing.Color.Black;
-            this.loginButton.BorderRadius = 15;
-            this.loginButton.BorderSize = 2;
-            this.loginButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.Location = new System.Drawing.Point(243, 244);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.loginButton.Size = new System.Drawing.Size(250, 49);
-            this.loginButton.TabIndex = 6;
-            this.loginButton.Texts = "Login";
-            this.loginButton.UnderlinedStyle = false;
-            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // Login_Page
             // 

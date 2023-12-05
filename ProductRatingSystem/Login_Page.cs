@@ -39,15 +39,31 @@ namespace ProductRatingSystem
 
                         myconnection.Open();
                         SQLiteCommand cmd = new SQLiteCommand(query, myconnection);
-                    cmd.Parameters.AddWithValue("@user", user.Texts);
-                    cmd.Parameters.AddWithValue("@pass", pass.Texts);
-                    SQLiteDataAdapter adapter = new SQLiteDataAdapter(cmd);
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-                    if(dataTable.Rows.Count>0)
-                    {
-                            //GO TO CORRESPONDING PAGE, BUT FOR NOW: 
+                        cmd.Parameters.AddWithValue("@user", user.Texts);
+                        cmd.Parameters.AddWithValue("@pass", pass.Texts);
+                        SQLiteDataAdapter adapter = new SQLiteDataAdapter(cmd);
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
+                        if(dataTable.Rows.Count>0)
+                        {
+                            //GO TO CORRESPONDING PAGE
                             MessageBox.Show("Login successful!");
+                        
+                        
+                            if(dataTable.Rows[0]["type"].ToString() == "Seller") 
+                            {
+                                this.Hide();
+                                Seller_Page seller_Page = new Seller_Page(dataTable);
+                                seller_Page.ShowDialog();
+                                this.Show();
+                            }
+                            else
+                            {
+                                this.Hide();
+                                Customer_Page customer_Page = new Customer_Page(dataTable);
+                                customer_Page.ShowDialog();
+                                this.Show();
+                            }
 
                         }
                         else
@@ -95,6 +111,11 @@ namespace ProductRatingSystem
         }
 
         private void textBoxControl2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginButton_Load(object sender, EventArgs e)
         {
 
         }

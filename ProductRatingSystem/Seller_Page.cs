@@ -13,22 +13,54 @@ namespace ProductRatingSystem
 {
     public partial class Seller_Page : Form
     {
-        public Seller_Page()
+        public Seller_Page(DataTable dt)
         {
             InitializeComponent();
-            Seller_PageLoad();
+            Seller_PageLoad(dt);
+        }
+        
+        private void p1_revOneDesc_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void postProductButton_Click(object sender, EventArgs e)
         {
-            Seller_Page wc = new Seller_Page();
             this.Hide();
-            wc.ShowDialog();
-            wc.Close();
+            Post_Product_Page product_Page = new Post_Product_Page();
+            product_Page.ShowDialog();
+            this.Show();
+
+        }
+
+        
+        private void logoutButton_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Logout_Page logout_Page = new Logout_Page();
+            logout_Page.ShowDialog();
             this.Show();
         }
 
-        private void p1_revOneDesc_TextChanged(object sender, EventArgs e)
+        private void p2_revTwoAuthor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void Seller_Page_Load_1(object sender, EventArgs e)
+        {
+            this.AutoScroll = true;
+        }
+
+        private void welcomeMessage_Click(object sender, EventArgs e)
         {
 
         }

@@ -33,11 +33,12 @@ namespace ProductRatingSystem
             this.pass = new ProductRatingSystem.TextBoxControl();
             this.user = new ProductRatingSystem.TextBoxControl();
             this.loginButton = new ProductRatingSystem.ButtonControl();
-            this.logoutMessage = new System.Windows.Forms.Label();
+            this.logoutMessage = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(306, 60);
@@ -49,6 +50,7 @@ namespace ProductRatingSystem
             // 
             // pass
             // 
+            this.pass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pass.BackColor = System.Drawing.SystemColors.Window;
             this.pass.BorderColor = System.Drawing.Color.Black;
             this.pass.BorderFocusColor = System.Drawing.Color.Black;
@@ -71,6 +73,7 @@ namespace ProductRatingSystem
             // 
             // user
             // 
+            this.user.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.user.BackColor = System.Drawing.SystemColors.Window;
             this.user.BorderColor = System.Drawing.Color.Black;
             this.user.BorderFocusColor = System.Drawing.Color.Black;
@@ -94,6 +97,7 @@ namespace ProductRatingSystem
             // loginButton
             // 
             this.loginButton.AllowDrop = true;
+            this.loginButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.loginButton.BorderColor = System.Drawing.Color.Black;
             this.loginButton.BorderFocusColor = System.Drawing.Color.Black;
             this.loginButton.BorderRadius = 15;
@@ -110,14 +114,15 @@ namespace ProductRatingSystem
             // 
             // logoutMessage
             // 
-            this.logoutMessage.AutoSize = true;
+            this.logoutMessage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.logoutMessage.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.logoutMessage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutMessage.Location = new System.Drawing.Point(203, 340);
+            this.logoutMessage.Location = new System.Drawing.Point(214, 347);
             this.logoutMessage.Name = "logoutMessage";
-            this.logoutMessage.Size = new System.Drawing.Size(331, 20);
+            this.logoutMessage.ReadOnly = true;
+            this.logoutMessage.Size = new System.Drawing.Size(328, 20);
             this.logoutMessage.TabIndex = 7;
             this.logoutMessage.Text = "You have been successfully logged out.";
-            this.logoutMessage.Click += new System.EventHandler(this.label2_Click);
             // 
             // Logout_Page
             // 
@@ -143,6 +148,6 @@ namespace ProductRatingSystem
         private TextBoxControl user;
         private TextBoxControl pass;
         private ButtonControl loginButton;
-        private System.Windows.Forms.Label logoutMessage;
+        private System.Windows.Forms.TextBox logoutMessage;
     }
 }

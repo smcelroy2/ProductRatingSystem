@@ -121,6 +121,9 @@
     <EmbeddedResource Include="Logout_Page.resx">
       <DependentUpon>Logout_Page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Post_Product_Page.resx">
+      <DependentUpon>Post_Product_Page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -130,6 +133,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Seller_Page.resx">
+      <DependentUpon>Seller_Page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TextBoxControl.resx">
       <DependentUpon>TextBoxControl.cs</DependentUpon>
     </EmbeddedResource>

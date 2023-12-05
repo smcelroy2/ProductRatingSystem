@@ -33,82 +33,131 @@ namespace ProductRatingSystem
         {
             this.postRevMessage = new System.Windows.Forms.TextBox();
             this.welcomeMessage = new System.Windows.Forms.Label();
-            this.productOne = new System.Windows.Forms.TextBox();
-            this.productTwo = new System.Windows.Forms.TextBox();
-            this.productThree = new System.Windows.Forms.TextBox();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.product1 = new System.Windows.Forms.TextBox();
+            this.product2 = new System.Windows.Forms.TextBox();
+            this.product3 = new System.Windows.Forms.TextBox();
+            this.logoutButton = new ProductRatingSystem.ButtonControl();
+            this.product4 = new System.Windows.Forms.TextBox();
+            this.product5 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // postRevMessage
             // 
+            this.postRevMessage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.postRevMessage.BackColor = System.Drawing.SystemColors.Window;
-            this.postRevMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.postRevMessage.Location = new System.Drawing.Point(307, 143);
-            this.postRevMessage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.postRevMessage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.postRevMessage.Location = new System.Drawing.Point(264, 135);
+            this.postRevMessage.Margin = new System.Windows.Forms.Padding(4);
+            this.postRevMessage.Multiline = true;
             this.postRevMessage.Name = "postRevMessage";
             this.postRevMessage.ReadOnly = true;
-            this.postRevMessage.Size = new System.Drawing.Size(453, 36);
+            this.postRevMessage.Size = new System.Drawing.Size(514, 45);
             this.postRevMessage.TabIndex = 0;
             this.postRevMessage.Text = "Post a Review for Your Purchases:";
             this.postRevMessage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // welcomeMessage
             // 
+            this.welcomeMessage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.welcomeMessage.AutoSize = true;
-            this.welcomeMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.welcomeMessage.Location = new System.Drawing.Point(403, 85);
+            this.welcomeMessage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeMessage.Location = new System.Drawing.Point(391, 81);
             this.welcomeMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.welcomeMessage.Name = "welcomeMessage";
-            this.welcomeMessage.Size = new System.Drawing.Size(221, 31);
+            this.welcomeMessage.Size = new System.Drawing.Size(232, 32);
             this.welcomeMessage.TabIndex = 1;
             this.welcomeMessage.Text = "Welcome, User!";
             this.welcomeMessage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // productOne
+            // product1
             // 
-            this.productOne.BackColor = System.Drawing.SystemColors.Window;
-            this.productOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productOne.Location = new System.Drawing.Point(339, 223);
-            this.productOne.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.productOne.Name = "productOne";
-            this.productOne.ReadOnly = true;
-            this.productOne.Size = new System.Drawing.Size(365, 32);
-            this.productOne.TabIndex = 2;
-            this.productOne.Text = "\r\n";
-            this.productOne.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.product1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.product1.BackColor = System.Drawing.SystemColors.Window;
+            this.product1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product1.Location = new System.Drawing.Point(339, 223);
+            this.product1.Margin = new System.Windows.Forms.Padding(4);
+            this.product1.Name = "product1";
+            this.product1.ReadOnly = true;
+            this.product1.Size = new System.Drawing.Size(365, 32);
+            this.product1.TabIndex = 2;
+            this.product1.Text = "\r\n";
+            this.product1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // productTwo
+            // product2
             // 
-            this.productTwo.BackColor = System.Drawing.SystemColors.Window;
-            this.productTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productTwo.Location = new System.Drawing.Point(339, 284);
-            this.productTwo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.productTwo.Name = "productTwo";
-            this.productTwo.ReadOnly = true;
-            this.productTwo.Size = new System.Drawing.Size(365, 32);
-            this.productTwo.TabIndex = 3;
-            this.productTwo.Text = "\r\n";
-            this.productTwo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.product2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.product2.BackColor = System.Drawing.SystemColors.Window;
+            this.product2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product2.Location = new System.Drawing.Point(339, 284);
+            this.product2.Margin = new System.Windows.Forms.Padding(4);
+            this.product2.Name = "product2";
+            this.product2.ReadOnly = true;
+            this.product2.Size = new System.Drawing.Size(365, 32);
+            this.product2.TabIndex = 3;
+            this.product2.Text = "\r\n";
+            this.product2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // productThree
+            // product3
             // 
-            this.productThree.BackColor = System.Drawing.SystemColors.Window;
-            this.productThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.productThree.Location = new System.Drawing.Point(339, 345);
-            this.productThree.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.productThree.Name = "productThree";
-            this.productThree.ReadOnly = true;
-            this.productThree.Size = new System.Drawing.Size(365, 32);
-            this.productThree.TabIndex = 4;
-            this.productThree.Text = "\r\n";
-            this.productThree.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.product3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.product3.BackColor = System.Drawing.SystemColors.Window;
+            this.product3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product3.Location = new System.Drawing.Point(339, 345);
+            this.product3.Margin = new System.Windows.Forms.Padding(4);
+            this.product3.Name = "product3";
+            this.product3.ReadOnly = true;
+            this.product3.Size = new System.Drawing.Size(365, 32);
+            this.product3.TabIndex = 4;
+            this.product3.Text = "\r\n";
+            this.product3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // vScrollBar1
+            // logoutButton
             // 
-            this.vScrollBar1.Location = new System.Drawing.Point(1032, 85);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 95);
-            this.vScrollBar1.TabIndex = 5;
+            this.logoutButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.logoutButton.BackColor = System.Drawing.Color.Black;
+            this.logoutButton.BorderColor = System.Drawing.Color.Black;
+            this.logoutButton.BorderFocusColor = System.Drawing.Color.Black;
+            this.logoutButton.BorderRadius = 15;
+            this.logoutButton.BorderSize = 2;
+            this.logoutButton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutButton.ForeColor = System.Drawing.Color.Transparent;
+            this.logoutButton.Location = new System.Drawing.Point(836, 31);
+            this.logoutButton.Name = "logoutButton";
+            this.logoutButton.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.logoutButton.Size = new System.Drawing.Size(167, 45);
+            this.logoutButton.TabIndex = 5;
+            this.logoutButton.Texts = "Logout";
+            this.logoutButton.UnderlinedStyle = false;
+            this.logoutButton.Load += new System.EventHandler(this.logoutButton_Load);
+            this.logoutButton.Click += new System.EventHandler(this.logoutButton_Click);
+            // 
+            // product4
+            // 
+            this.product4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.product4.BackColor = System.Drawing.SystemColors.Window;
+            this.product4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product4.Location = new System.Drawing.Point(339, 404);
+            this.product4.Margin = new System.Windows.Forms.Padding(4);
+            this.product4.Name = "product4";
+            this.product4.ReadOnly = true;
+            this.product4.Size = new System.Drawing.Size(365, 32);
+            this.product4.TabIndex = 6;
+            this.product4.Text = "\r\n";
+            this.product4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // product5
+            // 
+            this.product5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.product5.BackColor = System.Drawing.SystemColors.Window;
+            this.product5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.product5.Location = new System.Drawing.Point(339, 462);
+            this.product5.Margin = new System.Windows.Forms.Padding(4);
+            this.product5.Name = "product5";
+            this.product5.ReadOnly = true;
+            this.product5.Size = new System.Drawing.Size(365, 32);
+            this.product5.TabIndex = 7;
+            this.product5.Text = "\r\n";
+            this.product5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Customer_Page
             // 
@@ -116,15 +165,18 @@ namespace ProductRatingSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Controls.Add(this.vScrollBar1);
-            this.Controls.Add(this.productThree);
-            this.Controls.Add(this.productTwo);
-            this.Controls.Add(this.productOne);
+            this.Controls.Add(this.product5);
+            this.Controls.Add(this.product4);
+            this.Controls.Add(this.logoutButton);
+            this.Controls.Add(this.product3);
+            this.Controls.Add(this.product2);
+            this.Controls.Add(this.product1);
             this.Controls.Add(this.welcomeMessage);
             this.Controls.Add(this.postRevMessage);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Customer_Page";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Customer_Page_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,17 +186,20 @@ namespace ProductRatingSystem
 
         private System.Windows.Forms.TextBox postRevMessage;
         private System.Windows.Forms.Label welcomeMessage;
-        private System.Windows.Forms.TextBox productOne;
-        private System.Windows.Forms.TextBox productTwo;
-        private System.Windows.Forms.TextBox productThree;
+        private System.Windows.Forms.TextBox product1;
+        private System.Windows.Forms.TextBox product2;
+        private System.Windows.Forms.TextBox product3;
 
         private void Customer_PageLoad()
         {
             welcomeMessage.Text = $"Welcome, userName!";
-            productOne.Text = $"Product1";
-            productTwo.Text = $"Product2";
-            productThree.Text = $"Product3";
+            product1.Text = $"Product1";
+            product2.Text = $"Product2";
+            product3.Text = $"Product3";
         }
-        private System.Windows.Forms.VScrollBar vScrollBar1;
+
+        private ButtonControl logoutButton;
+        private System.Windows.Forms.TextBox product4;
+        private System.Windows.Forms.TextBox product5;
     }
 }

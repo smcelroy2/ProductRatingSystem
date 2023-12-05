@@ -10,10 +10,14 @@ using System.Windows.Forms;
 using System.IO;
 using System.Data.SQLite;
 
+
 namespace ProductRatingSystem
 {
     public partial class Logout_Page : Form
     {
+
+
+
         public Logout_Page()
         {
             InitializeComponent();
@@ -34,10 +38,21 @@ namespace ProductRatingSystem
         {
 
         }
-
+        private System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            Timer MyTimer = new Timer();
+            MyTimer.Interval = (1750);
+            MyTimer.Tick += new EventHandler(MyTimer_Tick);
+            MyTimer.Start();
+
+
+        }
+
+        private void MyTimer_Tick(object sender, EventArgs e)
+        {
+            logoutMessage.Visible = false;
         }
 
 
@@ -78,7 +93,8 @@ namespace ProductRatingSystem
             }
         }
 
-        private void label2_Click(object sender, EventArgs e)
+
+        private void logoutMessage_Click(object sender, EventArgs e)
         {
 
         }
